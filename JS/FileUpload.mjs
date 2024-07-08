@@ -3,7 +3,7 @@
  */
 class FileUpload extends HTMLElement {
     #file_input;
-    
+
     constructor() {
         super();
         console.log('test fileupload constructor')
@@ -28,6 +28,7 @@ class FileUpload extends HTMLElement {
         fileChanged.bind(this);
         return fileChanged;
     }
+
     #fileCancel() {
         function fileCancelled(event) {
             console.log('Cancelled');
@@ -38,4 +39,5 @@ class FileUpload extends HTMLElement {
     }
 }
 
-export { FileUpload };
+customElements.define('file-upload', FileUpload);
+console.log("TEST");
