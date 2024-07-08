@@ -2,9 +2,11 @@
  * Copyright meandering 2024
  */
 class FileUpload extends HTMLElement {
-    #file_input
+    #file_input;
+    
     constructor() {
         super();
+        console.log('test fileupload constructor')
     }
 
     connectedCallback() {
